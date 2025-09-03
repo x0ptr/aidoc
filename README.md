@@ -17,7 +17,18 @@ quotes are optional btw, so `aidoc go mutex` works just fine.
 
 ## install
 
-grab a binary from [releases](https://github.com/x0ptr/aidoc/releases), chmod +x it, throw it in your PATH.
+easiest way:
+```bash
+# with curl
+curl -L https://github.com/x0ptr/aidoc/releases/latest/download/aidoc-linux-amd64 -o aidoc
+chmod +x aidoc && sudo mv aidoc /usr/local/bin/
+
+# or with wget
+wget https://github.com/x0ptr/aidoc/releases/latest/download/aidoc-linux-amd64 -O aidoc
+chmod +x aidoc && sudo mv aidoc /usr/local/bin/
+```
+
+or grab a binary from [releases](https://github.com/x0ptr/aidoc/releases), chmod +x it, throw it in your PATH.
 
 or build it:
 ```bash
