@@ -124,8 +124,7 @@ func main() {
 
 	must(storage.CacheFilePath())
 	must(storage.LoadCache())
-	path := must(storage.ConfigFilePath())
-	log.Println(path)
+	must(storage.ConfigFilePath())
 
 	ctx := kong.Parse(&CLI,
 		kong.Name("aidoc"),
